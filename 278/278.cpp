@@ -9,16 +9,15 @@ public:
 
         int begin = 1;
         int end = n;
-        int cur;
+        int cur = begin + (end - begin - 1)/2;;
 
-        while (end >= begin) {
-            cur = (end - begin - 1)/2;
+        while (end > begin) {
+
             if(isBadVersion(cur))
                 end = cur;
             else
                 begin = cur+1;
-            cur = begin + (end - begin - 1)/2;
-            cout << cur << endl;
+            cur = begin + (end - begin - 1)/2;;
         }
         return cur;
     }
