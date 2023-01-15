@@ -32,6 +32,8 @@ LeetCode75_easy/
 *.exe
 *.out
 *.app
+[1-9]*/sol
+# 704/sol
 
 # VScode
 .vscode/
