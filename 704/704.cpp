@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
-        if (is > target || nums.back() < target)
+        if (nums.front() > target || nums.back() < target)
             return -1;
 
         const int* begin = &nums.front();
